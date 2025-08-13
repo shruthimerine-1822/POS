@@ -1,0 +1,154 @@
+/* ✅ Inventory.css — clean, paginated, no images */
+.inventory-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #b23cfd;
+}
+
+/* Form styling */
+.inventory-form {
+  background: #f5f5f5;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.inventory-form input[type="text"],
+.inventory-form input[type="number"],
+.inventory-form input[type="date"],
+.inventory-form input[type="checkbox"] {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inventory-form button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  grid-column: -2 / -1;
+}
+
+.inventory-form button:hover {
+  background: #574dcf;
+}
+
+/* Table styling */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.product-table th {
+  background: #f0f0f0;
+}
+
+.actions button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button.danger {
+  background: red;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.badge-success {
+  background: #e7f7ec;
+  color: #1d7a38;
+}
+
+.badge-warning {
+  background: #fff7e6;
+  color: #9a6700;
+}
+
+.badge-danger {
+  background: #fde8e8;
+  color: #b42318;
+}
+
+.badge-low {
+  background: orange;
+  color: white;
+}
+
+/* Pagination */
+.pager {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0;
+  gap: 8px;
+}
+
+.pager button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pager button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Adjust stock section */
+.adjust-box {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr auto;
+  gap: 10px;
+}
+
+.adjust-box input,
+.adjust-box select {
+  padding: 8px;
+  box-sizing: border-box;
+}
